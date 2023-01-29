@@ -1,5 +1,5 @@
 class Employee:
-    def __init__(self, first_name, last_name, salary, shift):
+    def __init__(self, first_name: str, last_name: str, salary: int, shift):
         self._first_name = first_name  # The underscore indicates that these are not to be accessed (Encapsulation)
         self._last_name = last_name
         self.salary = salary
