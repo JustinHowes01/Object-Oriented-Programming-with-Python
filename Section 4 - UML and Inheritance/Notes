@@ -1,0 +1,9 @@
+Designing and changing systems always involve communication between you, your teammates, and the customer.
+
+Architects use build plans to design houses, and electrical engineers use wiring schemes. Build plans and wiring schemes
+are the design languages for architects and electrical engineers. Software engineers have their own design language,
+called UML. UML stands for "Universal Modeling Language", and has symbols to represent software.
+
+What does a class look like in UML?
+Reference "Class UML Structure.png" in the directory "1 UML (Universal Modeling Language"
+

@@ -1,0 +1,19 @@
+Object - Allows us to group information that belongs together
+Class - A description of things that are in an object
+
+You could say that a class is a blueprint that describes what an object looks like.
+
+Class Employee: => Class name
+    def __init__(self, name, salary): => A function class is called a method. A method that starts and ends with
+                                         Underscores are called "dunder", or double underscore, methods.
+                                         The init method here is called "dunder init".
+
+What is self?
+Self is the first parameter of the init method. It is a reference to the object itself. Everything you do in the class
+will operate on the data of the object, or in this case, all the code we write in the employee class needs to work with
+and employee object. The way for the class to reference a specific employee is through the parameter "self".
+
+When we write "self.name = name", the name you passed when you created the object is stored.
+
+When we create an object, we say that we "instantiate" the class.
+Ex. e = Employee('Vera', 2000)

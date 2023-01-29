@@ -1,0 +1,86 @@
+1. Code Always Grows
+OO = Object Orientation
+OOP = Object Oriented Programming
+
+OOP is programming that is focused on objects
+
+Wiki definition - "Object oriented programming is a programming paradigm based on the concept of objects, which can
+                   contain data and code. Objects sometimes correspond to things found in the real world"
+
+What problems does OO solve?
+
+Code always grows, code always changes. A small script can be easily readable, but when that script continues to grow,
+it can become very hard to read. When the size of the script increases, you break up the parts of the script to improve
+readability. These separate parts, or modules, can be easier to read. Modules can also be split into smaller modules,
+further improving readability, but you can also split them up to do specific tasks. Employee stuff goes into the
+employee module, printing reports goes into the reports module, etc. This is called refactoring, and it is common
+practice for programmers in all programming languages.
+
+2. Managing Dependencies
+Splitting up the script into modules certainly helps with readability, but dependency can become an issue: All the
+modules have to depend on each other.
+
+When Module B uses something from Module A, Module B is Dependent on Module A. If you split up code without a plan, you
+end up with many modules with random dependencies. This is called Spaghetti Code.
+
+When too many small modules cause dependency problems, wouldn't it be better to sacrifice a bit of readability and
+combine them into one larger module? This can become an issue as well.
+
+Example: You combine two modules, "Customer Management" and "News Letter Service" into one module, Module A. When
+something changes in the "News Letter Service" module, you have a chance to break something in the "Customer Management"
+module. We say that Module A has more than one responsibility.
+
+Why is this a problem?
+
+In 2018, a bridge in Berlin was replaced by cutting out the old one. By the time the bridge was cut apart, it was
+realized that 30,000 households had no power. The bridge also had power lines routed through it, and when the bridge
+was cut apart, the power lines were severed. The city was dependent on the bridge to supply its power, and when the
+bridge was cut apart, it broke that dependency.
+
+Moral of the story? CHANGE IS DANGEROUS!
+If you combine things that really do not belong together, you run the risk of breaking things when one or the other is
+changed. Sometimes it becomes impossible to change one thing without breaking the other. The fewer reasons things have
+to change, the less risk you have of things breaking.
+
+This is why it is important to create modules that have a single responsibility and not combine them together. Single
+Responsibility means that things should only have a single reason to change.
+
+Rigidity and Fragility
+Rigid code is code that is so tightly coupled that a small change in one part of the system forces you to make massive
+changes in other parts of the system, just like the bridge.
+
+Fragile code is code where a small change in one part of the system breaks other parts, even if the part seems to be
+unrelated to each other.
+
+Problem indicators
+- Duplicate: The same code that appears in more than one place
+
+- Coupling: Code is so tightly connected to other code that if becomes hard or impossible to change code without making
+            major changes in the system.
+
+- No Single Responsibility: A module should only have one module to change.
+
+- if/else: When they perform different actions based on different object types
+
+It is very important to structure code and manage dependencies.
+
+How do you do this without dependencies exploding in all different directions?
+
+You can solve this problem with a dependency tree!
+
+By the time you are done, you will have a tool box to help guide you in Object Oriented Programming
+
+TOOL BOX
+- Objects and Classes
+- Inheritance
+- Encapsulation
+- Polymorphism
+- Composition
+
+What will be learned in this course:
+You will stop writing large programs and use the tools that OO gives you to split up your code and create modular
+applications. Modular applications are readable, testable, and if something goes wrong or you want to change things,
+you just have to work in one module instead of changing things throughout the code.
+
+The real definition of Object Orientation?
+To structure modules to prevent rigid and fragile code.
